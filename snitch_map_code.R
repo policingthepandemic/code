@@ -5,7 +5,7 @@ library(htmlwidgets)
 library(leaflet.providers)
 
 #read in data
-snitch <- read.csv("~/Dropbox/Policing the Pandemic (PtP) Interactive Map/Data/snitch_data_frame.csv")
+snitch <- read.csv("<name>")
 
 #prepare data for mapping
 snitch$event_url <- paste0("<b><a href='", snitch$event_url) %>%
@@ -40,4 +40,4 @@ snitchmap <- snitch %>%
              clusterOptions = TRUE, group = "COVID-19 Snitch Lines")
 
 #save as HTML for website
-saveWidget(widget=snitchmap, file="/Users/alexluscombe/Dropbox/Policing the Pandemic (PtP) Interactive Map/Snitch Map/index.html", selfcontained = FALSE)
+saveWidget(widget=snitchmap, file="<name>", selfcontained = FALSE)
