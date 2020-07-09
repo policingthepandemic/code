@@ -25,7 +25,7 @@ snitchcontent <- paste(sep = "<br/>",
                        snitch$place)
 
 phoneicon <- makeIcon(
-  iconUrl = "~/Dropbox/Policing the Pandemic (PtP) Interactive Map/Images/phone_image_4.png",
+  iconUrl = "https://github.com/policingthepandemic/code/blob/master/phone_image_4.png",
   iconWidth = 20, iconHeight = 50,
   iconAnchorX = 20, iconAnchorY = 50)
 
