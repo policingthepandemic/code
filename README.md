@@ -1,2 +1,2 @@
 # code
-Code used to build interactive maps and searchable database
+R code used to build interactive maps and searchable database
