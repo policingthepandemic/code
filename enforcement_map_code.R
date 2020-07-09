@@ -1,4 +1,4 @@
-```{r}
+#load in necessary packages
 library(tidyverse)
 library(leaflet)
 library(htmlwidgets)
@@ -115,4 +115,3 @@ ptpmap <- ptp %>%
 
 #save interative map as HTML object for website
 saveWidget(widget=ptpmap, file="<name>", selfcontained = FALSE)
-```
