@@ -32,7 +32,6 @@ phoneicon <- makeIcon(
 #create interactive map of snitch events
 snitchmap <- snitch %>%
   leaflet() %>%
-  #addProviderTiles(providers$Stamen.TonerLite) %>%
   addLayersControl(overlayGroups = "COVID-19 Snitch Lines",
                    options = layersControlOptions(collapsed = FALSE)) %>%
   addProviderTiles(providers$CartoDB.Positron) %>%
