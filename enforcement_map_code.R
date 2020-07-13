@@ -22,8 +22,8 @@ ptp$legislation <- paste0("<strong>Legislation: </strong>", ptp$legislation)
 ptp$number_of_people <- paste0("<strong>Number of people: </strong>", ptp$number_of_people)
 
 #jitter lat / long to prevent with point overlap
-ptp$lat <- jitter(ptp$lat, factor = 0.5)
-ptp$long <- jitter(ptp$long, factor = 0.5)
+ptp$lat <- jitter(ptp$lat, factor = 0.01)
+ptp$long <- jitter(ptp$long, factor = 0.01)
 
 #subset
 crim <- subset(ptp, offence_type == "Criminal law offence")
